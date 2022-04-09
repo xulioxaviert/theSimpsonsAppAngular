@@ -1,0 +1,22 @@
+<div class="container-search">
+    <input (keyup.enter)="searchCharacter()" #txtSearch type="text" class="form-control"
+        placeholder="Search Character...">
+    <button (click)="searchCharacter()">Press</button>
+
+<div *ngIf="results[0] === 'Empty Search'">
+    <h3>Character Not Found</h3>
+</div>
+
+    <div *ngIf="results.length > 0 && results[0] !== 'Empty Search'" >
+        <div *ngFor="let item of results" class="container-resualts">
+            <div class="card">
+                <img src={{item.image}} [alt]="item.character">
+                <div class="card-body">
+                    <h3>{{item.character}}</h3>
+                    <p>{{item.quote}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

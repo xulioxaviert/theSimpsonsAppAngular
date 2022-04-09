@@ -1,0 +1,26 @@
+h1 {
+    font-family: 'Grape Nuts',
+        cursive;
+    text-align: center;
+    font-size: 100px;
+    color: #FDCE1D;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+.container-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #F7B3BE;
+
+    .imagen {
+        width: 70%;
+        padding: 5px 0;
+        margin: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+}

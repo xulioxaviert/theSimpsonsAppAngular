@@ -1,0 +1,12 @@
+
+<div class=container-gallery>
+    <div *ngFor="let item of characters" class=container-card>
+        <div class="card">
+            <img src={{item.image}} [alt]="item.character">
+            <div class="card-body">
+                <h3>{{item.character}}</h3>
+                <p>{{item.quote}}</p>
+            </div>
+        </div>
+    </div>
+</div>
