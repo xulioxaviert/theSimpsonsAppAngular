@@ -7,6 +7,12 @@ h1 {
     text-shadow: 2px 2px 4px #000000;
 }
 
+@media (max-width: 560px) {
+    h1 {
+        font-size: 60px;
+        transition: 0.3s;
+    }
+}
 
 .container-header {
     display: flex;
