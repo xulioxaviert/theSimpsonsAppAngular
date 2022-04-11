@@ -14,13 +14,14 @@ export class ServiceService {
   searchCharacter(value: string) {
     value = value.trim().toLocaleLowerCase();
 
-    this.http.get(`https://thesimpsonsquoteapi.glitch.me/quotes?character=${value}`)
+    this.http.get(`https://thesimpsonsquoteapi.glitch.me/quotes?&character=${value}`)
       .subscribe((res: any) => {
+                
         if (res == 0) {
-
+        
           this.results[0] = 'Empty Search';
         } else {
-
+             
           this.results = res;
         }
 
